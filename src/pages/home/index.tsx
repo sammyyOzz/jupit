@@ -1,4 +1,5 @@
 import SecondSection from "./second-section"
+import ServicesSection from "./services-section"
 import TopSection from "./top-section"
 
 function Home() {
@@ -6,6 +7,7 @@ function Home() {
     <>
       <TopSection />
       <SecondSection />
+      <ServicesSection />
     </>
   )
 }
