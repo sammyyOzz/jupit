@@ -29,7 +29,7 @@ function CardOne({ image, text, top, right, left, bottom }: CardOneProps) {
       <Box pl={2}>
         <Text 
           mb="4px" 
-          color="#1C1C93" 
+          color="primary" 
           fontWeight={600} 
           fontSize="14px"
         >

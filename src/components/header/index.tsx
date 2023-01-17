@@ -16,8 +16,8 @@ function Layout() {
           ))}
         </Flex>
         <Box>
-          <Button outlined color="#1C1C93">Sign In</Button>
-          <Button outlined bg="secondary" color="#1C1C93">Register</Button>
+          <Button outlined color="primary">Sign In</Button>
+          <Button outlined bg="secondary" color="primary">Register</Button>
         </Box>
       </Flex>
     </Box>

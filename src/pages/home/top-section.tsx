@@ -1,11 +1,11 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react"
-import Button from "../components/button"
-import manOnLandingPage from '../assets/man-landing-page.png'
-import CardOne from "../components/card-one"
-import coinImage from "../assets/coin.png"
-import faceImage from "../assets/face.png"
+import Button from "../../components/button"
+import manOnLandingPage from '../../assets/man-landing-page.png'
+import CardOne from "../../components/card-one"
+import coinImage from "../../assets/coin.png"
+import faceImage from "../../assets/face.png"
 
-function Home() {
+function TopSection() {
   return (
     <>
       <Flex minH="calc(100vh - 100px)" py="50px">
@@ -49,4 +49,4 @@ function Home() {
   )
 }
 
-export default Home
+export default TopSection

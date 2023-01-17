@@ -15,7 +15,7 @@ function Button({ children, outlined, bg, color, fontWeight, p }: ButtonProps) {
     <ChakraButton 
       m="5px"
       border={outlined ? '1px solid #1C1C93' : '1px solid transparent'}
-      bg={!bg ? 'none' : (bg === 'primary' ? '#1C1C93' : '#F2921D')}
+      bg={!bg ? 'none' : (bg === 'primary' ? 'primary' : 'secondary')}
       color={color ? color : 'black'}
       fontWeight={fontWeight ? fontWeight : 500}
       fontSize="18px"
