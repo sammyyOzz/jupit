@@ -1,6 +1,7 @@
 import SecondSection from "./second-section"
 import ServicesSection from "./services-section"
 import TopSection from "./top-section"
+import TestimonialSection from "./testimonial-section"
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <TopSection />
       <SecondSection />
       <ServicesSection />
+      <TestimonialSection />
     </>
   )
 }
