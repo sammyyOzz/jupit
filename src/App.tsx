@@ -1,12 +1,10 @@
 import Footer from './components/footer';
-import Header from './components/header';
-import Home from './pages/home';
+import Landing from './pages/landing';
 
 function App() {
   return (
     <>
-      {/* <Header /> */}
-      <Home />
+      <Landing />
       <Footer />
     </>
   );
