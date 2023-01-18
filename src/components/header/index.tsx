@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import logo from '../../assets/logo.png'
+import { Auth } from '../../features/auth'
 import { appRoutes } from '../../routes'
-import Button from '../button'
 
 function Layout() {
   return (
@@ -16,8 +16,7 @@ function Layout() {
           ))}
         </Flex>
         <Box>
-          <Button outlined color="primary">Sign In</Button>
-          <Button outlined bg="secondary" color="primary">Register</Button>
+          <Auth />
         </Box>
       </Flex>
     </Box>

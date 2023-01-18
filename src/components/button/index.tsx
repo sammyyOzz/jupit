@@ -8,9 +8,10 @@ interface ButtonProps {
   color?: string;
   fontWeight?: string;
   p?: string;
+  handleClick?: () => void;
 }
 
-function Button({ children, outlined, bg, color, fontWeight, p }: ButtonProps) {
+function Button({ children, outlined, bg, color, fontWeight, p, handleClick }: ButtonProps) {
   return (
     <ChakraButton 
       m="5px"
@@ -20,6 +21,7 @@ function Button({ children, outlined, bg, color, fontWeight, p }: ButtonProps) {
       fontWeight={fontWeight ? fontWeight : 500}
       fontSize="18px"
       p={p || 30}
+      onClick={handleClick}
     >
       { children }
     </ChakraButton>
