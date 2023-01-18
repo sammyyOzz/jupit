@@ -1,38 +1,37 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import Button from '../../../components/button'
 import { selectAuthUser } from '../redux/auth-selectors'
 import { setUser } from '../redux/auth-slice'
 
 function Auth() {
+  const navigate = useNavigate()
   const dispatch = useDispatch()
+
+  const login = () => dispatch(setUser(true))
+  const logout = () => dispatch(setUser(false))
+  
   const user = useSelector(selectAuthUser)
-  console.log(user)
 
-  const _setUser = () => {
-    dispatch(setUser(true))
-  }
-
-  const logout = () => {
-    dispatch(setUser(false))
-  }
+  const navigateToDashboard = () => navigate('/dashboard')
 
   return (
     <>
       <Button 
         outlined 
         color="primary" 
-        handleClick={!user ? _setUser : logout}
+        handleClick={!user ? login : navigateToDashboard}
       >
-        Sign In
+       {!user ? 'Sign In' : 'Dashboard'}
       </Button>
       <Button 
         outlined 
         bg="secondary" 
         color="primary" 
-        handleClick={!user ? _setUser : logout}
+        handleClick={!user ? login : logout}
       >
-        Register
+        {!user ? 'Register' : 'Logout'}
       </Button>
     </>
   )

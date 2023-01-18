@@ -5,7 +5,7 @@ import TopSection from "./top-section"
 import TestimonialSection from "./testimonial-section"
 import InstallAppSection from "./install-app-section"
 
-function Home() {
+function Landing() {
   return (
     <>
       <Header />
@@ -18,4 +18,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Landing

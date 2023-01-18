@@ -1,12 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/footer';
 import Landing from './pages/landing';
+import Dashboard from './pages/dashboard';
 
 function App() {
   return (
-    <>
-      <Landing />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
