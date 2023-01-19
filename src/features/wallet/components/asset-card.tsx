@@ -17,6 +17,7 @@ function AssetCard() {
 
   return (
     <Flex 
+      minW="137px"
       w="137px"
       h="143px"
       border="1px solid #F5F5F5"
@@ -58,11 +59,11 @@ function AssetCard() {
         {!isGraph && <Text color="gray" fontSize="13px">USDT</Text>}
       </Box>
 
-      <Box p={2}>
+      <Box>
         {isGraph
           ? <Image src={graphImage} alt="" />
           : (
-            <Flex align="center">
+            <Flex align="center" p={2}>
               <Image src={assetUp} alt="" mr={1} />
               <Text color="#0EBF7C" fontSize="13px" fontWeight={500}>-0.65%</Text>
             </Flex>

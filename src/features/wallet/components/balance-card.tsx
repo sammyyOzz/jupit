@@ -3,7 +3,7 @@ import hideIcon from '../../../assets/hide-detail.png'
 
 function BalanceCard() {
   return (
-    <Box h="121px" w="290px" bg="primary" m={2} borderRadius="10px" p={4}>
+    <Box h="121px" minW="290px" bg="primary" m={2} borderRadius="10px" p={4}>
       <Flex justify="space-between" align="center" mb={3}>
         <Flex align="center">
           <Text mr={2} color="#D2D2E9" fontSize="13px">Naira Balance</Text>
