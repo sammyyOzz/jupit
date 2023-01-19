@@ -8,7 +8,7 @@ function Footer() {
   return (
     <Box bg="#1C1D93" pt="50px" color="white">
       <Box w="90%" mx="auto">
-        <SimpleGrid columns={[2, null, 5]} spacing='40px' fontSize="20px">
+        <SimpleGrid columns={[2, null, 3, 5]} spacing='40px' fontSize="20px">
           <Box>
             <Text fontWeight="bold" mb={6}>
               Quick Links
