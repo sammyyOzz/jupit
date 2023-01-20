@@ -1,4 +1,7 @@
-import { Route } from "../types"
+interface Route {
+  name: string;
+  to: string;
+}
 
 export const appRoutes: Array<Route> = [
   {
