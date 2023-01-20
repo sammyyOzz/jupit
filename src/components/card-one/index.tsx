@@ -3,7 +3,7 @@ import { Box, Flex, Image, Text } from '@chakra-ui/react'
 interface CardOneProps {
   image: string;
   text: string;
-  top?: string;
+  top?: any;
   right?: string;
   left?: string;
   bottom?: string;

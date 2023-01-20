@@ -5,6 +5,8 @@ import walletReducer from "./redux/wallet-slice";
 import ListTransactions from "./components/list-transactions";
 import WalletSidebar from "./components/wallet-sidebar";
 import WalletNavbar from "./components/wallet-navbar";
+import { assetData } from "./data";
+import { walletApi } from "./redux/wallet-api";
 
 export {
   WalletHeader,
@@ -13,5 +15,7 @@ export {
   walletReducer,
   ListTransactions,
   WalletSidebar,
-  WalletNavbar
+  WalletNavbar,
+  assetData,
+  walletApi
 }

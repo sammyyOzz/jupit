@@ -7,6 +7,7 @@ import {
   WalletSidebar,
   WalletNavbar
 } from '../../features/wallet'
+import { useGetCryptoPriceQuery } from '../../features/wallet/redux/wallet-api';
 
 
 function Dashboard() {
