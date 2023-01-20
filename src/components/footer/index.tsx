@@ -88,7 +88,10 @@ function Footer() {
           borderTop="1px solid #817e7eac"
         >
           <Image src={logoWhite} alt="" h="30px" w="100px" />
-          <Flex justify="space-between" py="20px">
+          <Flex 
+            justify="space-between" 
+            wrap="wrap"
+            py="20px">
             <Text px="30px">
               Quick Link
             </Text>

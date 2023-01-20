@@ -9,7 +9,7 @@ import nairaImage from "../../assets/naira.png"
 function InstallAppSection() {
   return (
     <Box pb="100px">
-      <Box w="90%" mx="auto">
+      <Box w="80%" mx="auto">
         <Image src={phoneImage} alt="" mx="auto" />
         <Heading as="h2" fontSize="60px" color="#090931" textAlign="center" maxW={['90%', null, '65%']} mx="auto">
           Install the App Today
@@ -47,33 +47,33 @@ function InstallAppSection() {
             src={btcImage} 
             alt="" 
             position="absolute"
-            w="150px"
-            h="150px"
+            w={["100px", null, "150px"]}
+            h={["100px", null, "150px"]}
             top="0"
-            mt="-75px"
+            mt={["-50px", null, "-75px"]}
             right="100"
           />
           <Image 
             src={nairaImage} 
             alt="" 
             position="absolute"
-            w="120px"
-            h="120px"
+            w={["80px", null, "120px"]}
+            h={["80px", null, "120px"]}
             top="30px"
-            right="-60px"
+            right={["-40px", null, "-60px"]}
           />
-          <Image 
+          <Image
             src={ethImage} 
-            alt="" 
+            alt=""
             position="absolute"
-            w="120px"
-            h="120px"
+            w={["80px", null, "120px"]}
+            h={["80px", null, "120px"]}
             bottom="0"
-            mb="-60px"
+            mb={["-40px", null, "-60px"]}
             left="30px"
           />
 
-          <Text color="white" maxW="55%" m="auto" fontWeight="600" fontSize="32px" mb={10}>
+          <Text color="white" maxW={["70%", null, "55%"]} m="auto" fontWeight="600" fontSize="32px" mb={10}>
             Join our 3,620 and counting user today and start transacting seamlessly
           </Text>
           <Button 

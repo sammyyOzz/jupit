@@ -1,7 +1,6 @@
-import React from 'react'
+import { Button } from '@chakra-ui/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import Button from '../../../components/button'
 import { selectAuthUser } from '../redux/auth-selectors'
 import { setUser } from '../redux/auth-slice'
 
@@ -19,17 +18,26 @@ function Auth() {
   return (
     <>
       <Button 
-        outlined 
         color="primary" 
-        handleClick={!user ? login : navigateToDashboard}
+        bg="white" 
+        border="1px solid" 
+        borderColor="primary" 
+        p="30px"
+        mr={3}
+        onClick={!user ? login : navigateToDashboard}
+        w={['100%', null, null, null, 'fit-content']}
+        mb={['20px', null, null, null, '0']}
       >
-       {!user ? 'Sign In' : 'Dashboard'}
+        {!user ? 'Sign In' : 'Dashboard'}
       </Button>
       <Button 
-        outlined 
-        bg="secondary" 
         color="primary" 
-        handleClick={!user ? login : logout}
+        bg="secondary" 
+        border="1px solid" 
+        borderColor="primary" 
+        p="30px"
+        onClick={!user ? login : logout}
+        w={['100%', null, null, null, 'fit-content']}
       >
         {!user ? 'Register' : 'Logout'}
       </Button>
