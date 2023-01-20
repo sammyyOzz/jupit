@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import playVectorImage from "../../assets/play-vector.png"
 
-interface InstallCardProps {
+export interface InstallCardProps {
   children: React.ReactNode
 }
 

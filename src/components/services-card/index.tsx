@@ -1,6 +1,6 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 
-interface ServicesCardProps {
+export interface ServicesCardProps {
   title: string;
   text: string;
   icon: string;

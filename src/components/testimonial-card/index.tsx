@@ -1,7 +1,7 @@
 import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import avatarIcon from '../../assets/avatar-black.png'
 
-interface TestimonialCardProps {
+export interface TestimonialCardProps {
   name: string;
   title: string;
   text: string;

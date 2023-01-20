@@ -4,7 +4,7 @@ import blueCircleImage from "../../assets/blue-circle.png"
 import twoBlueArrows from "../../assets/two-blue-arrows.png"
 import twoYellowArrows from "../../assets/two-yellow-arrows.png"
 
-interface  CardTwoProps {
+export interface  CardTwoProps {
   title: string;
   text: string;
   blueBg?: boolean;
